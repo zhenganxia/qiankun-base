@@ -1,0 +1,68 @@
+{
+    // vscode默认启用了根据文件类型自动设置tabsize的选项
+    "editor.detectIndentation": false,
+    "editor.fontSize": 14,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    "editor.padding.bottom": 30,
+    "editor.padding.top": 30,
+    "editor.showFoldingControls": "always",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "explorer.sortOrder": "type",
+    "extensions.closeExtensionDetailsOnViewChange": true,
+    "vetur.format.options.tabSize": 4,
+    "vetur.format.scriptInitialIndent": false,
+    "vetur.format.defaultFormatter.js": "prettier",
+    // "vetur.format.defaultFormatter.js": "vscode-typescript",
+    // prettier、prettyhtml、js-beautify-html 差异较大
+    "vetur.format.defaultFormatter.html": "prettyhtml",
+    "vetur.format.defaultFormatterOptions": {
+        "prettier": {
+            "semi": false, // 句尾添加分号
+            "singleQuote": true, // 使用单引号代替双引号
+            "trailingComma": "none", // 在对象或数组最后一个元素后面是否加逗号
+            "arrowParens": "avoid", //  (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
+            "printWidth": 120, // 超过最大值换行
+            "proseWrap": "never", // markdown不强制换行
+            "vueIndentScriptAndStyle": true
+        },
+        "prettyhtml": {
+            "sortAttributes": true, // 属性排序
+            "printWidth": 120 // 超过最大值换行
+        }
+    },
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false
+    },
+    // 是否开启eslint检测
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown"
+    ],
+    "eslint.run": "onType",
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "scm.repositories.visible": 20
+}
